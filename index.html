@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">
+
+        <h1>PASSWORD GENETRATOR</h1>
+        <!-- creating input box -->
+        <div class="divin">
+            <input type="text" value="" class="inputBox" id="passbox" disabled>
+        </div>
+        
+        <!-- creating password length -->
+        <div class="lengen">
+            <input type="range" min="4" max="15" id="passLen" value="5" step="1">
+            <div id="showLen">
+                <p>Password Length</p>
+                <p id="showPassLen">5</p>
+            </div>
+        </div>
+
+        <!-- creating options to choose -->
+        <div class="rows">
+            <label for="lowerCase">Include Lowercase (a-z)</label>
+            <input type="checkbox" name="charChoice" id="lowerCase">
+        </div>
+        
+        <div class="rows">
+            <label for="upperCase">Include Uppercase (A-Z)</label>
+            <input type="checkbox" name="charChoice" id="upperCase">
+        </div>
+
+        <div class="rows">
+            <label for="number">Include Numbers (0-9)</label>
+            <input type="checkbox" name="charChoice" id="number">
+        </div>
+
+        <div class="rows">
+            <label for="specialChar">Include Special Character (@#$%^&*)</label>
+            <input type="checkbox" name="charChoice" id="specialChar">
+        </div>
+
+        <!-- creating button to generate password-->
+        <div class="mybtn">
+            <button id="genbtn">GENERATE PASSWORD</button>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
